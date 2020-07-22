@@ -1,6 +1,6 @@
 /* global cozy */
 
-import 'babel-polyfill'
+import '@babel/polyfill'
 
 import 'styles'
 import 'styles/intent'

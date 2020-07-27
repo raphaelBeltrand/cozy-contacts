@@ -18,14 +18,6 @@ env:
     - secure: "B24hol+bj40GwMUA+jNYxklQA+c+lDJLZGRgz/gknQ5MhDUkmPgCuACkVivzzRq48jlXt0uSjfi/avtGqDA78q5AiuG1cNgGDGA+BKdI2bqqAevQEJ11lgC/U4PaxUtAJqB5MgR79gBb0XsHAtYfpCCKoySiIVqW4nZlPEtiOZLXfjQ1HJvv89BBtPySJli6JbSMMHfU1giZkbIrOXZwUWrGSUktUVDACQh+knZdC6X4bzywUC0WMzlHhRphmJxhmbTKKaBmv/JgoN9Qj50imG66cWoRC5Afva5M/86kix9VgO1a3xJZk4uTBz3KusPSryYvqTnWZ3lGWRqCa/aUXO0ogfemCjVupk1UPgYLqT3QOMSja+IozWR24yDDyXV1qr8fMupdV2M6FSRlEsfEesoIdpHqChD3SO9p7GLlvdwVeWqdT1zKUM9UEIQEE2bcHObyCHORZjgJC2MSBmVmawul48oG0Cpy1CbumaHHrvGnc0KO+zgl7qHxKGpBaCikIojuFCsZlBH+kS3Db6RZHRYyXiHeHIiDVLlKXQbl3uWiiC493uMRKetRwV/1refwGB+zYTJ+RurffmcZrGfPlUp7V2qnkswKffPlHJ2Zia1TH70u0pCeozxAjLGZlOv4toc3M0HNbXJfPY5cSzBgO1MYIe8gCVMLeMZkxCpg0bQ="
     # BUNDLESIZE_GITHUB_TOKEN
     - secure: "J7h9YacjdRzmAX2+MDa1OYHxKmueZpujqJ2p+Yj7pwIAb0yJiSiqJGd49F143kR+7NPudT1z6rtVT8YmLin8ioGHT0Izuwk7+40KXg9w3D26qLMrznwu+NkzKkwHfuY15B5vC9UT2BTfwN6z/d4r1gXCgVgXZuV+OhlXfSJIgZTNmU6UZNyGSK9ZUIcplr2HhcZTbn3Iz+Ci5VXoOZejWnzjBm0oz+FZib1kIqd72Lm3aMrtLDZzRpbTS/snUBb+5VRfj3tbqpHOsCvhldP3+qLRu7MdC9PJAUF1ggvoIsZW62LqW/h/r4FT2iDYXkcXPvQWAduPxg4D9J9ZOnW5OSuVTKxLs84SJ8htWqfylo00LtR+JgjjIeMS+UJ8s2Qg9Q4d1L0SW0H2wIt++b/aVV/kEnQwzG9puQVBB+4jO8FNQKXC26cCc9jhz8u6Xu+MVA1reUYiAf9IoICXuqRmvMhzemld2DO8ypPNjWTohQwJP/MzfgwRZbeMyEGoryoHR2Lx+BQWTX9m3WpMlKGo9j8OKN9nhQRdhjBP1K6oM9DcPC7F+64+17wOURZ6LcFRBO8GP848NxXWYHd62ZN2xJuTL3RBFQVce4rSSYFv8W/gU4pybvoQmKQaENzFzwWsJAxJ+PqmDNOI4AUegiRJRo8QvG3qQOQiNnA3T6bgWB8="
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-      - deadsnakes
-    packages:
-      - g++-4.8
-      - python3.5
 cache:
   yarn: true
   directories:

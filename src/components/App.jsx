@@ -67,14 +67,13 @@ class ContactsApp extends React.Component {
 
     return (
       <Layout monocolumn="true">
-        {isMobile &&
-          cozyBarHack && (
-            <BarCenter>
-              <Title>
-                <span className={'fil-path-title'}>Contacts</span>
-              </Title>
-            </BarCenter>
-          )}
+        {isMobile && cozyBarHack && (
+          <BarCenter>
+            <Title>
+              <span className={'fil-path-title'}>Contacts</span>
+            </Title>
+          </BarCenter>
+        )}
         <Main>
           {flag('switcher') && <FlagSwitcher />}
           <ContactsSelectionBar trashAction={deleteContact} />

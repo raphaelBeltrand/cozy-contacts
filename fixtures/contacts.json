@@ -135,6 +135,25 @@
       "metadata": {
         "version": 1
       }
+    },
+    {
+      "_id": "{{guid}}",
+      "name": {
+        "givenName": "No-mail",
+        "familyName": "Aberdeen"
+      },
+      "birthday": "{{date '1950' '2000' 'YYYY-MM-DD'}}",
+      "address": [
+        { "street": "{{int 1 100}} {{street}}", "city": "{{city}}", "country": "{{country}}", "postcode": "{{zipcode}}", "primary": true }
+      ],
+      "relationships": {
+        "groups": {
+          "data":[]
+        }
+      },
+      "metadata": {
+        "version": 1
+      }
     }
   ],
   "io.cozy.contacts.groups": [

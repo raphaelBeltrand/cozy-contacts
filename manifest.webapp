@@ -66,5 +66,12 @@
       "type": ["io.cozy.contacts"],
       "href": "/services"
     }
-  ]
+  ],
+  "services": {
+    "sync-index-displayName": {
+        "type": "node",
+        "file": "services/sync-index-displayName/contacts.js",
+        "trigger": "@event io.cozy.contacts:CREATED,UPDATED"
+    }
+  }
 }

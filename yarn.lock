@@ -919,6 +919,13 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@babel/runtime@^7.4.5":
+  version "7.11.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.0.tgz#f10245877042a815e07f7e693faff0ae9d3a2aac"
+  integrity sha512-qArkXsjJq7H+T86WrIFV0Fnu/tNOkZ4cgXmjkzAu3b/58D5mFIO8JH/y77t7C9q0OdDRdh9s7Ue5GasYssxtXw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.0.0-beta.44.tgz#f8832f4fdcee5d59bf515e595fc5106c529b394f"
@@ -8670,9 +8677,10 @@ minilog@3.1.0:
   dependencies:
     microee "0.0.6"
 
-"minilog@git+https://github.com/cozy/minilog.git#master":
+"minilog@https://github.com/cozy/minilog.git#master":
   version "3.1.0"
-  resolved "git+https://github.com/cozy/minilog.git#f01f7d9dfe20981177dd34b9662c2f077d818f82"
+  uid f01f7d9dfe20981177dd34b9662c2f077d818f82
+  resolved "https://github.com/cozy/minilog.git#f01f7d9dfe20981177dd34b9662c2f077d818f82"
   dependencies:
     microee "0.0.6"
 
@@ -10964,12 +10972,12 @@ react-event-listener@^0.6.0, react-event-listener@^0.6.2:
     prop-types "^15.6.0"
     warning "^4.0.1"
 
-react-final-form-arrays@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-final-form-arrays/-/react-final-form-arrays-1.1.0.tgz#ac1232d26483b996a5f57395aab4886a1b01d9a0"
-  integrity sha512-DcNUoWxY7Ty7QeO/F/WVmX3BCssGUF6P+UCRjiVbX4halM1h/24BHxcWIEI7zr+pIfCY9YNsXWmcKgo0XrMerQ==
+react-final-form-arrays@3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/react-final-form-arrays/-/react-final-form-arrays-3.1.2.tgz#391ceee29d866f2128c807b510c6a17ff4dc72cc"
+  integrity sha512-ds1FUS8s3AnfbvfmBTPnjijS7veKBr6DrWOGQzDI7grE4OosVWOREwd2ZUkz3HPB3wXQcNWsqyDuQDBSMGUr2g==
   dependencies:
-    react-lifecycles-compat "^3.0.4"
+    "@babel/runtime" "^7.4.5"
 
 react-final-form@3.6.7:
   version "3.6.7"

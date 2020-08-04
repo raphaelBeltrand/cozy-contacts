@@ -1,4 +1,7 @@
 import get from 'lodash/get'
+import { models } from 'cozy-client'
+
+const { createFullname, createSort, createDisplayName } = models.contacts
 
 const formValuesToContact = (data, oldContact) => {
   const {
@@ -14,10 +17,8 @@ const formValuesToContact = (data, oldContact) => {
     note
   } = data
 
-  const fullName = (givenName || '') + ' ' + (familyName || '')
-
-  return {
-    fullname: fullName.trim(),
+  const newContact = {
+    fullname: createFullname(givenName, familyName),
     name: {
       givenName,
       familyName
@@ -71,6 +72,12 @@ const formValuesToContact = (data, oldContact) => {
       version: 1,
       cozy: true
     }
+  }
+
+  return {
+    ...newContact,
+    sort: createSort(newContact),
+    displayName: createDisplayName(newContact)
   }
 }
 
